@@ -25,6 +25,7 @@ app.use(cors({
     'http://localhost:3000', 
     'http://localhost:5173',
     'http://127.0.0.1:3000',
+    'https://testzone1-production.up.railway.app',
     process.env.CLIENT_URL
   ].filter(Boolean),
   credentials: true,
@@ -382,3 +383,4 @@ process.on('uncaughtException', (err) => {
 });
 
 module.exports = app;
+
